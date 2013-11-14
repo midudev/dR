@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>dR (another domReady library)</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300,400|Inconsolata:400' rel='stylesheet'>
+    <link href='http://weloveiconfonts.com/api/?family=entypo' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- to load the development plugin -->
+    <!-- <script src="dr.js"></script> -->
+    <!-- to load the production plugin -->
+    <script src="dr.min.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/rainbow-custom.min.js"></script>
+    
+<head/>
+<body>
+  <a href="https://github.com/miduga/dR"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://miduga.es/img/fork_me.png" alt="Fork me on GitHub"></a>
+  
+  <header>
+    <a id="download" href="http://miduga.es/projects/dR/dr.min.js"><span class="entypo-install"></span>Download dR<span id="version">min. 295bytes</span></a>
+    <h1>dR</h1>
+  </header>
+
+	<h2>What's that?</h2>
+		<p>A simple domReady library that let's you know when, obviously, the dom is ready in only 295bytes (minified).</p>
+		<p>Based on:
+			<ul>
+				<li><a href="https://github.com/ded/domready">domReady</a>
+				<li><a href="https://github.com/soyjavi/quojs">quoJS</a>
+				<li><a href="http://www.dustindiaz.com/smallest-domready-ever">Smallest DOMReady code, ever</a>
+			</ul>
+
+	   <h2>Example of usage</h2>
+		<h3>Using JavaScript</h3>
+    <pre><code data-language="javascript">
+    dR( function() {
+     console.log( 'Yikes! Dom is ready, dude!' );
+    } );
+    </code></pre>
+
+		<h3>Using CoffeeScript</h3>
+    <pre><code data-language="coffeescript">
+    dR ->
+      console.log 'Yikes! Dom is ready, dude!'
+    </code></pre>
